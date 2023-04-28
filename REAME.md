@@ -1,6 +1,6 @@
 # Desafio para o processo seletivo da empresa TPrime Tecnologia
 
-Link do vídeo de apresentação: ////////
+Link do vídeo de apresentação: https://youtu.be/1KqnOiY0lhA
 
 # Instruções de configuração:
 
