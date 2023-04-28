@@ -1,0 +1,40 @@
+import { useState } from "react";
+import { StyledContactPage } from "./style";
+import { ContactList } from "../../components/Contacts/ContactList";
+import { ContactForm } from "../../components/Contacts/ContactForm";
+
+export const ContactPage = () => {
+  const [aData, setAData] = useState([
+    {
+      codigo: "001001",
+      nome: "Jose da Silva",
+      email: "jose@email.com",
+      telefone: "(11) 99901-1234",
+    },
+    {
+      codigo: "001002",
+      nome: "Marcio de Souza",
+      email: "marcio@email.com",
+      telefone: "(11) 99902-1234",
+    },
+    {
+      codigo: "001003",
+      nome: "Mauricio Cruz",
+      email: "mauricio@email.com",
+      telefone: "(11) 99903-1234",
+    },
+    {
+      codigo: "001004",
+      nome: "Fabiana Dias",
+      email: "fabiana@email.com",
+      telefone: "(11) 99904-1234",
+    },
+  ]);
+
+  return (
+    <StyledContactPage>
+      <ContactList listOfContacts={aData} setListOfContacts={setAData} />
+      <ContactForm listOfContacts={aData} setListOfContacts={setAData} />
+    </StyledContactPage>
+  );
+};
